@@ -377,17 +377,7 @@
         <div id="studyMode" class="study-mode">
             <button class="back-btn" id="backBtn">← Back to Dashboard</button>
 
-            <div class="settings">
-                <h3>Settings</h3>
-                <div class="setting-item">
-                    <label>Active words in rotation (N):</label>
-                    <input type="number" id="maxActiveWords" value="10" min="5" max="20">
-                </div>
-                <div class="setting-item">
-                    <label>Times correct to master:</label>
-                    <input type="number" id="masteryThreshold" value="3" min="2" max="5">
-                </div>
-            </div>
+            
             <div id="flashcardSection">
                 <div class="flashcard-container">
                     <div class="flashcard" id="flashcard">
@@ -439,6 +429,18 @@
                     <div class="progress-bar-study">
                         <div class="progress-fill-study learning" id="learningProgress"></div>
                     </div>
+                </div>
+            </div>
+
+            <div class="settings">
+                <h3>Settings</h3>
+                <div class="setting-item">
+                    <label>Active words in rotation (N):</label>
+                    <input type="number" id="maxActiveWords" value="10" min="5" max="20">
+                </div>
+                <div class="setting-item">
+                    <label>Times correct to master:</label>
+                    <input type="number" id="masteryThreshold" value="3" min="2" max="5">
                 </div>
             </div>
 
