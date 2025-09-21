@@ -449,79 +449,73 @@
     </div>
 
     <script>
-        // Configuration - Add your word lists here
+        // Configuration - Using a simplified key-value pair structure for words.
         const WORD_LISTS = {
-
-
-
-            "List 1": [{
-                category: 'PREDICTION', meaning: 'PREDICTION', words: ['AUGUR/AUGURY', 'FORECAST', 'FORESIGHT/ FORESEE', 'FORETELL', 'PRESAGE', 'PRESCIENCE', 'PROGNOSIS', 'ANTICIPATES']
-            }, {
-                category: 'SIGN (WARNING) (-)', meaning: 'SIGN (WARNING) (-)', words: ['FOREBODE', 'FORESHADOW', 'PREMONITION', 'OMINOUS', 'INTIMIDATE']
-            }, {
-                category: 'CAUSING FEAR', meaning: 'CAUSING FEAR', words: ['INTIMIDATE', 'DAUNTING', 'SINISTER', 'ENRAGE', 'FUME']
-            }, {
-                category: 'VERY ANGRY', meaning: 'VERY ANGRY', words: ['ENRAGE', 'FUME', 'INCENSE', 'INFURIATE', 'IRATE', 'IRE', 'LIVID', 'WRATH']
-            }, {
-                category: 'DETAILED KNOWLEDGE/INTELLECTUAL', meaning: 'DETAILED KNOWLEDGE/INTELLECTUAL', words: ['CEREBRAL', 'ERUDITE', 'PUNDIT', 'Enlightenment', 'Refinement']
-            }, {
-                category: 'SKILLFUL', meaning: 'SKILLFUL', words: ['ADEPT', 'ADROIT', 'CONSUMMATE', 'DEFT', 'DEXTEROUS', 'PROFICIENT', 'PROWESS', 'FINESSE']
-            }, {
-                category: 'FLEXIBLE', meaning: 'FLEXIBLE', words: ['LITHE', 'SUPPLE', 'AGILE', 'CIRCUITOUS', 'CONVOLUTED']
-            }, {
-                category: 'HAVING TWISTS/TURNS/COMPLEX', meaning: 'HAVING TWISTS/TURNS/COMPLEX', words: ['CIRCUITOUS', 'CONVOLUTED', 'INTERTWINED', 'INVOLVED', 'MEANDER', 'TORTUOUS', 'Complicated']
-            }, {
-                category: 'INCLINATION', meaning: 'INCLINATION', words: ['AFFINITY', 'APTITUDE', 'BENT', 'DISPOSED', 'PENCHANT', 'PREDILECTION', 'PREDISPOSITION', 'PROCLIVITY']
-            }, {
-                category: 'HORRIFYING/SHOCKING', meaning: 'HORRIFYING/SHOCKING', words: ['AGHAST', 'APPALLING', 'EGREGIOUS', 'GHASTLY', 'GROSS', 'GRUESOME', 'HEINOUS', 'HIDEOUS']
-            }, {
-                category: 'ATTRACTIVE', meaning: 'ATTRACTIVE', words: ['AESTHETIC', 'COMELY', 'DISJOINTED', 'POLARIZE', 'SEGREGATE']
-            }, {
-                category: 'SEPARATE/ X CONNECTED', meaning: 'SEPARATE/ X CONNECTED', words: ['DISJOINTED', 'POLARIZE', 'SEGREGATE', 'X NEXUS (opposite)', 'PRODIGY']
-            }, {
-                category: 'VERY TALENTED (CHILD)', meaning: 'VERY TALENTED (CHILD)', words: ['PRODIGY', 'PRECOCIOUS', 'AVERT', 'CIRCUMVENT', 'DEFLECT']
-            }, {
-                category: 'AVOID/DODGE', meaning: 'AVOID/DODGE', words: ['AVERT', 'CIRCUMVENT', 'DEFLECT', 'ELUDE/ELUSIVE', 'EVADE / EVASIVE', 'SHIRK', 'SKIRT', 'SWERVE']
-            }, {
-                category: 'AWKWARD/CLUMSY', meaning: 'AWKWARD/CLUMSY', words: ['FUMBLE', 'GAUCHE', 'GAWKY', 'UNGAINLY', 'BUOYANT']
-            }, {
-                category: 'OPTIMISTIC', meaning: 'OPTIMISTIC', words: ['BUOYANT', 'SANGUINE', 'UPBEAT', 'X PESSIMISTIC (opposite)', 'DILATORY']
-            }, {
-                category: 'BE SLOW/WASTE TIME', meaning: 'BE SLOW/WASTE TIME', words: ['DILATORY', 'LINGER', 'MALINGER', 'PEDANTIC', 'DIDACTIC']
-            }, {
-                category: 'INSTRUCTIVE (-)', meaning: 'INSTRUCTIVE (-)', words: ['PEDANTIC', 'DIDACTIC', 'OBSEQUIOUS', 'SYCOPHANT', 'SELF-FLATTERY']
-            }, {
-                category: 'EXCESSIVE FLATTERY (-)', meaning: 'EXCESSIVE FLATTERY (-)', words: ['OBSEQUIOUS', 'SYCOPHANT', 'SELF-FLATTERY', 'ADULATION', 'FUTILE']
-            }, {
-                category: 'INEFFECTIVE', meaning: 'INEFFECTIVE', words: ['FUTILE', 'INEFFECTUAL', 'X EFFICACY (opposite)', '*FECKLESS (irresponsible)', 'DIFFUSE']
-            }, {
-                category: 'SPREAD', meaning: 'SPREAD', words: ['DIFFUSE', 'DISSEMINATE', 'PROMULGATE', 'PROPAGATE', 'Physiological']
-            }, {
-                category: 'BODILY', meaning: 'BODILY', words: ['Physiological', 'Corporeal', 'Anatomical']
-            }],
+            "List 1": [
+                { word: 'AUGUR', meaning: 'to predict or foreshadow' },
+                { word: 'FORECAST', meaning: 'a prediction of future events' },
+                { word: 'FORESIGHT', meaning: 'the ability to predict what will happen' },
+                { word: 'FORETELL', meaning: 'to predict the future' },
+                { word: 'PRESAGE', meaning: 'a sign that something will happen' },
+                { word: 'PRESCIENCE', meaning: 'knowledge of events before they happen' },
+                { word: 'PROGNOSIS', meaning: 'a forecast of the likely outcome' },
+                { word: 'ANTICIPATE', meaning: 'to expect or predict' },
+                { word: 'FOREBODE', meaning: 'to warn of a future misfortune' },
+                { word: 'FORESHADOW', meaning: 'to be a warning or indication of a future event' },
+                { word: 'PREMONITION', meaning: 'a strong feeling that something is about to happen' },
+                { word: 'OMINOUS', meaning: 'giving the impression that something bad is going to happen' },
+                { word: 'INTIMIDATE', meaning: 'to frighten someone to make them do what one wants' },
+                { word: 'DAUNTING', meaning: 'seeming difficult to deal with; intimidating' },
+                { word: 'SINISTER', meaning: 'giving the impression that something harmful or evil is happening' },
+                { word: 'ENRAGE', meaning: 'to make very angry' },
+                { word: 'FUME', meaning: 'to feel, show, or express great anger' },
+                { word: 'INCENSE', meaning: 'to make very angry' },
+                { word: 'INFURIATE', meaning: 'to make extremely angry' },
+                { word: 'IRATE', meaning: 'feeling great anger' },
+                { word: 'IRE', meaning: 'anger' },
+                { word: 'LIVID', meaning: 'furiously angry' },
+                { word: 'WRATH', meaning: 'extreme anger' },
+                { word: 'CEREBRAL', meaning: 'intellectual rather than emotional' },
+                { word: 'ERUDITE', meaning: 'having or showing great knowledge' },
+                { word: 'PUNDIT', meaning: 'an expert in a particular subject' },
+                { word: 'ENLIGHTENMENT', meaning: 'the attainment of insight or knowledge' },
+                { word: 'REFINEMENT', meaning: 'the improvement or clarification of something' },
+                { word: 'ADEPT', meaning: 'very skilled or proficient' },
+                { word: 'ADROIT', meaning: 'clever or skillful' },
+                { word: 'CONSUMMATE', meaning: 'showing a high degree of skill' },
+                { word: 'DEFT', meaning: 'neatly skillful and quick in movement' },
+                { word: 'DEXTEROUS', meaning: 'showing or having skill, especially with the hands' },
+                { word: 'PROFICIENT', meaning: 'competent or skilled in doing something' },
+                { word: 'PROWESS', meaning: 'skill or expertise in a particular field' },
+                { word: 'FINESSE', meaning: 'intricate and refined delicacy' },
+            ],
             "Common Words II": [
-                {
-                    category: "INTELLIGENCE",
-                    meaning: "INTELLIGENCE",
-                    words: ["PERSPICACIOUS", "SAGACIOUS", "ASTUTE", "SHREWD", "DISCERNING", "KEEN", "SHARP"]
-                },
-                {
-                    category: "STUBBORNNESS",
-                    meaning: "STUBBORNNESS",
-                    words: ["OBSTINATE", "INTRANSIGENT", "RECALCITRANT", "REFRACTORY", "CONTUMACIOUS"]
-                }
+                { word: 'PERSPICACIOUS', meaning: 'having a ready insight into and understanding of things' },
+                { word: 'SAGACIOUS', meaning: 'having or showing keen mental discernment and good judgment' },
+                { word: 'ASTUTE', meaning: 'having an ability to accurately assess situations or people' },
+                { word: 'SHREWD', meaning: 'having or showing sharp powers of judgment' },
+                { word: 'DISCERNING', meaning: 'having or showing good judgment' },
+                { word: 'KEEN', meaning: 'having or showing eagerness or enthusiasm' },
+                { word: 'SHARP', meaning: 'having a cutting edge or point' },
+                { word: 'OBSTINATE', meaning: 'stubbornly refusing to change one\'s opinion' },
+                { word: 'INTRANSIGENT', meaning: 'unwilling or refusing to change one\'s views' },
+                { word: 'RECALCITRANT', meaning: 'having an obstinately uncooperative attitude' },
+                { word: 'REFRACTORY', meaning: 'stubborn or unmanageable' },
+                { word: 'CONTUMACIOUS', meaning: 'stubbornly or willfully disobedient to authority' },
             ],
             "Common Words III": [
-                {
-                    category: "PRAISE",
-                    meaning: "PRAISE",
-                    words: ["LAUDATORY", "PANEGYRIC", "ENCOMIUM", "PLAUDIT", "ACCOLADE", "COMMENDATION"]
-                },
-                {
-                    category: "CRITICISM",
-                    meaning: "CRITICISM",
-                    words: ["CASTIGATE", "EXCORIATE", "LAMBASTE", "CENSURE", "REPROACH", "REBUKE"]
-                }
+                { word: 'LAUDATORY', meaning: 'expressing praise and commendation' },
+                { word: 'PANEGYRIC', meaning: 'a public speech or published text in praise of someone' },
+                { word: 'ENCOMIUM', meaning: 'a speech or piece of writing that praises someone highly' },
+                { word: 'PLAUDIT', meaning: 'praise' },
+                { word: 'ACCOLADE', meaning: 'an award or privilege granted as a special honor' },
+                { word: 'COMMENDATION', meaning: 'praise' },
+                { word: 'CASTIGATE', meaning: 'to reprimand severely' },
+                { word: 'EXCORIATE', meaning: 'to criticize severely' },
+                { word: 'LAMBASTE', meaning: 'to criticize harshly' },
+                { word: 'CENSURE', meaning: 'to express severe disapproval of' },
+                { word: 'REPROACH', meaning: 'to address someone in such a way as to express disapproval' },
+                { word: 'REBUKE', meaning: 'to express sharp disapproval or criticism of' },
             ]
         };
 
@@ -592,22 +586,27 @@
                     this.masteryThreshold = parseInt(e.target.value);
                 });
             }
-
+            
+            // Updated logic to handle flat list of word-meaning pairs
             initializeListProgress() {
                 Object.keys(WORD_LISTS).forEach(listName => {
                     if (!this.listProgress[listName]) {
                         this.listProgress[listName] = {};
-                        const categories = WORD_LISTS[listName];
+                        const wordObjects = WORD_LISTS[listName]; // This is now an array of {word, meaning}
+                        
+                        // Shuffle the list to ensure randomness from the start
+                        const shuffledWords = this.shuffleArray(wordObjects);
 
-                        categories.forEach(category => {
-                            category.words.forEach(word => {
-                                this.listProgress[listName][word] = {
-                                    word: word,
-                                    meaning: category.meaning,
-                                    correctCount: 0,
-                                    state: 'learning'
-                                };
-                            });
+                        shuffledWords.forEach(wordObj => {
+                            const word = wordObj.word;
+                            const meaning = wordObj.meaning;
+                            // Use the word itself as the key
+                            this.listProgress[listName][word] = {
+                                word: word,
+                                meaning: meaning,
+                                correctCount: 0,
+                                state: 'learning'
+                            };
                         });
                     }
                 });
@@ -658,23 +657,31 @@
             }
 
             updateActiveWords() {
-                const learningWords = Object.values(this.words).filter(w => w.state === 'learning');
-                const reviewingWords = Object.values(this.words).filter(w => w.state === 'reviewing');
-                const masteredWords = Object.values(this.words).filter(w => w.state === 'mastered');
+                const learningWords = this.shuffleArray(Object.values(this.words).filter(w => w.state === 'learning'));
+                const reviewingWords = this.shuffleArray(Object.values(this.words).filter(w => w.state === 'reviewing'));
+                const masteredWords = this.shuffleArray(Object.values(this.words).filter(w => w.state === 'mastered'));
 
                 this.activeWords = [...reviewingWords];
 
                 const remainingSlots = this.maxActiveWords - this.activeWords.length;
-                const wordsToAdd = Math.min(remainingSlots, learningWords.length);
-                this.activeWords.push(...learningWords.slice(0, wordsToAdd));
-
+                if(remainingSlots > 0) {
+                    const wordsToAdd = Math.min(remainingSlots, learningWords.length);
+                    this.activeWords.push(...learningWords.slice(0, wordsToAdd));
+                }
+                
+                // If there's still space and no learning words, pull from mastered for review
                 if (this.activeWords.length < this.maxActiveWords && learningWords.length === 0) {
                     const masteredToAdd = this.maxActiveWords - this.activeWords.length;
-                    this.activeWords.push(...this.shuffleArray(masteredWords).slice(0, masteredToAdd));
+                    this.activeWords.push(...masteredWords.slice(0, masteredToAdd));
                 }
             }
 
             showNextWord() {
+                // Refresh active words if the pool is empty but there are still words to learn/review
+                if (this.activeWords.length === 0) {
+                    this.updateActiveWords();
+                }
+
                 if (this.activeWords.length === 0) {
                     this.flashcardSection.style.display = 'none';
                     this.noWordsMessage.style.display = 'block';
@@ -685,6 +692,7 @@
                 this.noWordsMessage.style.display = 'none';
 
                 let nextWord;
+                // Simple random selection from the active pool
                 if (this.activeWords.length === 1) {
                     nextWord = this.activeWords[0];
                 } else {
@@ -726,7 +734,7 @@
                     } else if (this.currentWord.state === 'reviewing' && this.currentWord.correctCount >= this.masteryThreshold) {
                         this.currentWord.state = 'mastered';
                     } else if (this.currentWord.state === 'mastered' && this.currentWord.correctCount >= this.masteryThreshold) {
-                        this.currentWord.correctCount = this.masteryThreshold;
+                        this.currentWord.correctCount = this.masteryThreshold; // Cap the count
                     }
                 } else {
                     this.currentWord.correctCount = 0;
@@ -737,10 +745,12 @@
                     }
                 }
 
-                // Update the master progress
+                // Update the master progress object
                 this.listProgress[this.currentList][this.currentWord.word] = { ...this.currentWord };
 
-                this.updateActiveWords();
+                // Remove the answered word from the current active list to avoid repeats
+                this.activeWords = this.activeWords.filter(w => w.word !== this.currentWord.word);
+
                 this.updateProgress();
                 this.showNextWord();
             }
@@ -758,9 +768,9 @@
                 this.totalWords2.textContent = totalWords;
                 this.totalWords3.textContent = totalWords;
 
-                this.masteredProgress.style.width = `${(masteredWords / totalWords) * 100}%`;
-                this.reviewingProgress.style.width = `${(reviewingWords / totalWords) * 100}%`;
-                this.learningProgress.style.width = `${(learningWords / totalWords) * 100}%`;
+                this.masteredProgress.style.width = totalWords > 0 ? `${(masteredWords / totalWords) * 100}%` : '0%';
+                this.reviewingProgress.style.width = totalWords > 0 ? `${(reviewingWords / totalWords) * 100}%` : '0%';
+                this.learningProgress.style.width = totalWords > 0 ? `${(learningWords / totalWords) * 100}%` : '0%';
             }
 
             shuffleArray(array) {
